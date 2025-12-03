@@ -1,0 +1,268 @@
+:root {
+    --brand-purple: #6C2E8D;
+    --brand-wine: #8A1E36;
+    --brand-light: #F9F5FA;
+    --brand-gray: #E5E7EB;
+    --text-dark: #374151;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Cores Personalizadas */
+.text-purple {
+    color: var(--brand-purple) !important;
+}
+
+.text-wine {
+    color: var(--brand-wine) !important;
+}
+
+.bg-purple {
+    background-color: var(--brand-purple) !important;
+}
+
+.bg-wine {
+    background-color: var(--brand-wine) !important;
+}
+
+.bg-light-purple {
+    background-color: var(--brand-light) !important;
+}
+
+/* Botões */
+.btn-purple {
+    background-color: var(--brand-purple);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: var(--brand-wine);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-white {
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brand-purple);
+}
+
+/* Hero Section */
+#inicio {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(108, 46, 141, 0.9), rgba(138, 30, 54, 0.8));
+    mix-blend-mode: multiply;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cards de Destaque */
+.feature-card {
+    border-top: 4px solid var(--brand-purple);
+    border-radius: 15px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--brand-light);
+    color: var(--brand-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* Serviços */
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #eee;
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+/* Equipe */
+.team-img-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid var(--brand-light);
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+/* Convênios */
+.convenio-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.convenio-item:hover {
+    border-color: var(--brand-purple);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #9CA3AF;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--brand-purple);
+}
+
+/* Utilitários Extras */
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20BA5C;
+    color: white;
+}
+
+.convenio-logo {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
