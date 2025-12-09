@@ -1,5 +1,3 @@
-// Responsável por alterar o estilo da barra de navegação durante o scroll.
-
 window.addEventListener('scroll', function () {
     
     const navbar = document.querySelector('.navbar');

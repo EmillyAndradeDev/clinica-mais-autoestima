@@ -1,5 +1,3 @@
-// Responsável por capturar os dados do formulário e abrir o WhatsApp.
-
 function enviarParaWhatsApp(event) {
     event.preventDefault();
 
@@ -14,11 +12,8 @@ function enviarParaWhatsApp(event) {
         return;
     }
 
-    // Substituir pelo número real da clínica
-    const numeroClinica = "5512999999999"; 
+    const numeroClinica = "5512997621143"; 
 
-    // Montagem do texto da mensagem
-    // O código %0A é interpretado pelo WhatsApp como uma quebra de linha
     const texto = `*Olá! Gostaria de fazer um agendamento.*%0A%0A` +
                   `*Nome:* ${nome}%0A` +
                   `*Telefone:* ${telefone}%0A` +
